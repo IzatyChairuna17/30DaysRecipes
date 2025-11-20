@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">30 Days Recipes</string>
+
+    <string-array name="tips_list">
+        <item>Day 1 - Resep 1</item>
+        <item>Day 2 - Resep 2</item>
+        <item>Day 3 - Resep 3</item>
+        <item>Day 4 - Resep 4</item>
+        <item>Day 5 - Resep 5</item>
+        <item>Day 6 - Resep 6</item>
+        <item>Day 7 - Resep 7</item>
+        <item>Day 8 - Resep 8</item>
+        <item>Day 9 - Resep 9</item>
+        <item>Day 10 - Resep 10</item>
+        <item>Day 11 - Resep 11</item>
+        <item>Day 12 - Resep 12</item>
+        <item>Day 13 - Resep 13</item>
+        <item>Day 14 - Resep 14</item>
+        <item>Day 15 - Resep 15</item>
+        <item>Day 16 - Resep 16</item>
+        <item>Day 17 - Resep 17</item>
+        <item>Day 18 - Resep 18</item>
+        <item>Day 19 - Resep 19</item>
+        <item>Day 20 - Resep 20</item>
+        <item>Day 21 - Resep 21</item>
+        <item>Day 22 - Resep 22</item>
+        <item>Day 23 - Resep 23</item>
+        <item>Day 24 - Resep 24</item>
+        <item>Day 25 - Resep 25</item>
+        <item>Day 26 - Resep 26</item>
+        <item>Day 27 - Resep 27</item>
+        <item>Day 28 - Resep 28</item>
+        <item>Day 29 - Resep 29</item>
+        <item>Day 30 - Resep 30</item>
+    </string-array>
+</resources>
