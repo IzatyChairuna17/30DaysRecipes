@@ -5,32 +5,30 @@
 ![WhatsApp Image 2025-11-22 at 10 02 03](https://github.com/user-attachments/assets/8a96d09f-d5e1-48f5-959d-33106cfb851f)
 
 
-Setelah di klik pada gambar akan muncul resep nya: 
+Setelah di tekan pada gambar akan muncul resep nya: 
 ![WhatsApp Image 2025-11-22 at 10 02 07](https://github.com/user-attachments/assets/04e7e17e-a76c-4185-a8b0-1851a780c653)
 
-Tugas Pemrograman Mobile
-Aplikasi ini saya buat sebagai bagian dari tugas mata kuliah Pemrograman Mobile. Tujuan utama tugas ini adalah untuk melatih kemampuan dasar dalam membuat aplikasi Android, mengorganisasi file project, memahami tema dan komponen UI sederhana, serta menerapkan Jetpack Compose dalam membangun tampilan aplikasi.
+⚪ FITUR UTAMA
 
-Fitur Utama 
-
-✔ Tampilan Utama Menggunakan Jetpack Compose
+✔️ Tampilan Utama Menggunakan Jetpack Compose
 Aplikasi menggunakan setContent{} untuk menampilkan UI berbasis Compose sehingga lebih modern dan efisien.
 
-✔ Header Judul
+✔️ Header Judul
 Terdapat header bertuliskan “30 Days Recipes” yang berfungsi sebagai identitas aplikasi.
 
-✔ Tampilan Daftar Resep
+✔️ Tampilan Daftar Resep
 Terdapat daftar (list) resep sederhana dari Hari 1 sampai Hari 4.
 Daftar ini ditampilkan menggunakan LazyColumn sehingga dapat digulir secara vertikal dengan rapi.
 
-✔ Item Resep dengan Judul & Deskripsi
+✔️ Item Resep dengan Judul & Deskripsi
 Setiap item menampilkan:
 Judul resep, misalnya “Hari 1”, “Hari 2”, dll.
 Deskripsi singkat resep harian.
 
-✔ Desain Antarmuka Minimalis
+✔️ Desain Antarmuka Minimalis
 Tampilan menggunakan layout sederhana agar mudah dipahami, serta menjaga struktur kode tetap mudah dirawat.
 
+Aplikasi ini saya buat sebagai bagian dari tugas mata kuliah Pemrograman Mobile. Tujuan utama tugas ini adalah untuk melatih kemampuan dasar dalam membuat aplikasi Android, mengorganisasi file project, memahami tema dan komponen UI sederhana, serta menerapkan Jetpack Compose dalam membangun tampilan aplikasi.
 Dalam proses pengerjaan tugas ini, saya berusaha memahami dasar-dasar pembuatan aplikasi Android menggunakan Jetpack Compose. Saya memulai dengan membuat struktur tampilan sederhana, kemudian menambahkan daftar resep harian yang berisi judul, gambar, dan deskripsi. Selama proses tersebut, saya beberapa kali melakukan revisi kode, memperbaiki error, serta menyesuaikan UI agar tampil lebih rapi dan sesuai kebutuhan. Proyek ini saya selesaikan sebagai bentuk latihan untuk meningkatkan pemahaman saya dalam menyusun UI sederhana, mengelola state, menampilkan daftar data, serta menggunakan komponen dasar di Android Studio.
 
 
