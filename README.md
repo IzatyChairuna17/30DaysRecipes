@@ -31,13 +31,5 @@ Deskripsi singkat resep harian.
 ✔ Desain Antarmuka Minimalis
 Tampilan menggunakan layout sederhana agar mudah dipahami, serta menjaga struktur kode tetap mudah dirawat.
 
-
-Teknologi & Tools
-Android Studio
-Kotlin
-Jetpack Compose
-Material 3 Components
-
-
 Dalam proses pengerjaan tugas ini, saya berusaha memahami dasar-dasar pembuatan aplikasi Android menggunakan Jetpack Compose. Saya memulai dengan membuat struktur tampilan sederhana, kemudian menambahkan daftar resep harian yang berisi judul, gambar, dan deskripsi. Selama proses tersebut, saya beberapa kali melakukan revisi kode, memperbaiki error, serta menyesuaikan UI agar tampil lebih rapi dan sesuai kebutuhan. Proyek ini saya selesaikan sebagai bentuk latihan untuk meningkatkan pemahaman saya dalam menyusun UI sederhana, mengelola state, menampilkan daftar data, serta menggunakan komponen dasar di Android Studio.
 Dibuat oleh : Izaty Chairuna (243307108)
