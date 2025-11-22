@@ -3,16 +3,19 @@ package pnm.tigad.a30daysrecipes
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.AnimatedVisibility
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -47,7 +50,7 @@ fun RecipeApp() {
             .background(Color(0xFFFFF8DE))
     ) {
 
-
+        // HEADER
         Column(
             modifier = Modifier
                 .fillMaxWidth()
@@ -65,7 +68,7 @@ fun RecipeApp() {
             Spacer(modifier = Modifier.height(4.dp))
 
             Text(
-                text = "Masakan rumahan yang simple dan enak untuk keluarga",
+                text = "Masakan rumahan simple untuk keluarga",
                 fontSize = 15.sp,
                 color = Color.Black
             )
@@ -86,10 +89,14 @@ fun RecipeApp() {
 
 @Composable
 fun RecipeItem(food: FoodData) {
+
+    var expanded by remember { mutableStateOf(false) }
+
     Column(
         modifier = Modifier
             .fillMaxWidth()
             .background(Color(0xFFFFE08F), RoundedCornerShape(16.dp))
+            .clickable { expanded = !expanded }
             .padding(16.dp)
     ) {
 
@@ -99,10 +106,12 @@ fun RecipeItem(food: FoodData) {
             contentDescription = null,
             modifier = Modifier
                 .fillMaxWidth()
-                .height(190.dp)
-                .padding(bottom = 10.dp),
+                .height(180.dp)
+                .background(Color.LightGray, RoundedCornerShape(12.dp)),
             contentScale = ContentScale.Crop
         )
+
+        Spacer(modifier = Modifier.height(10.dp))
 
         Text(
             text = food.dayTitle,
@@ -111,23 +120,30 @@ fun RecipeItem(food: FoodData) {
             color = Color.Black
         )
 
-        Spacer(modifier = Modifier.height(6.dp))
+        AnimatedVisibility(
+            visible = expanded,
+            enter = fadeIn(),
+            exit = fadeOut()
+        ) {
+            Column {
+                Spacer(modifier = Modifier.height(10.dp))
 
-        Text(
-            text = food.description,
-            fontSize = 14.sp,
-            color = Color.Black
-        )
+                Text(
+                    text = food.description,
+                    fontSize = 15.sp,
+                    color = Color.Black
+                )
+            }
+        }
     }
 }
-
-
 
 data class FoodData(
     val dayTitle: String,
     val description: String,
     val imageRes: Int
 )
+
 
 val foodList = listOf(
     FoodData("Day 1 – Soto Ayam",
